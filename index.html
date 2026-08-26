@@ -3,221 +3,182 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of David Giliberti, VP of Data Management and Quantitative Analysis.">
     <title>David Giliberti - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-brand">David Giliberti</div>
-            <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
-                <span class="sun-icon">☀️</span>
-                <span class="moon-icon">🌙</span>
-            </button>
-        </div>
-    </nav>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-    <!-- Hero Section -->
-    <section class="hero" id="hero">
-        <div class="hero-content">
+    <header class="site-header">
+        <nav class="nav container" aria-label="Primary">
+            <a href="#top" class="brand">David Giliberti</a>
+            <ul id="navLinks" class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-controls">
+                <button id="themeToggle" class="theme-toggle" type="button" aria-pressed="false" aria-label="Switch to dark mode">Dark mode</button>
+                <button id="navToggle" class="nav-toggle" type="button" aria-expanded="false" aria-controls="navLinks">Menu</button>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main">
+        <section id="top" class="hero container reveal">
+            <p class="eyebrow">Lake Mary, FL</p>
             <h1>David Giliberti</h1>
-            <h2>VP, Data Management & Quantitative Analysis</h2>
-            <p class="hero-subtitle">Investment services professional delivering enterprise analytics solutions with Power BI and Microsoft Fabric pipelines. Building executive dashboards and automating reporting to improve reliability and governance.</p>
-            <div class="hero-cta">
+            <p class="headline">VP, Data Management and Quantitative Analysis</p>
+            <p class="summary">Investment services VP delivering enterprise analytics with Power BI and Microsoft Fabric pipelines. Builds executive dashboards and automates reporting to improve reliability and governance.</p>
+            <div class="cta-row">
                 <a href="#contact" class="btn btn-primary">Get In Touch</a>
                 <a href="#resume" class="btn btn-secondary">View Resume</a>
             </div>
-        </div>
-    </section>
+            <ul class="quick-facts">
+                <li><strong>3+</strong> net-new Power BI reports delivered</li>
+                <li><strong>5+</strong> legacy reports modernized</li>
+                <li><strong>700+</strong> regression tests executed</li>
+            </ul>
+        </section>
 
-    <!-- Skills Section -->
-    <section class="skills" id="skills">
-        <div class="container">
+        <section id="about" class="container section reveal">
+            <h2>Background</h2>
+            <p>Investment services professional focused on enterprise reporting systems, semantic models, and analytics governance. Combines Power BI, Fabric, PySpark, and SQL workflows to produce trusted KPI reporting for leadership teams.</p>
+        </section>
+
+        <section id="skills" class="container section reveal">
             <h2>Technical Skills</h2>
-            
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>Data Platforms & Tools</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Microsoft Fabric</span>
-                        <span class="skill-tag">Power BI</span>
-                        <span class="skill-tag">Power Query (M)</span>
-                        <span class="skill-tag">DAX</span>
-                        <span class="skill-tag">Lakehouse</span>
-                        <span class="skill-tag">Data Pipelines</span>
+            <div class="grid">
+                <article class="panel">
+                    <h3>Data Platforms and Tools</h3>
+                    <div class="tag-row">
+                        <span class="tag">Microsoft Fabric</span>
+                        <span class="tag">Power BI</span>
+                        <span class="tag">Power Query (M)</span>
+                        <span class="tag">DAX</span>
+                        <span class="tag">Lakehouse</span>
+                        <span class="tag">Data Pipelines</span>
                     </div>
-                </div>
-
-                <div class="skill-category">
-                    <h3>Languages & Frameworks</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">PySpark</span>
-                        <span class="skill-tag">Spark SQL</span>
-                        <span class="skill-tag">Python</span>
-                        <span class="skill-tag">SQL</span>
+                </article>
+                <article class="panel">
+                    <h3>Languages and Frameworks</h3>
+                    <div class="tag-row">
+                        <span class="tag">PySpark</span>
+                        <span class="tag">Spark SQL</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">SQL</span>
                     </div>
-                </div>
-
-                <div class="skill-category">
+                </article>
+                <article class="panel">
                     <h3>Specializations</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Power BI Semantic Modeling</span>
-                        <span class="skill-tag">ELT Development</span>
-                        <span class="skill-tag">Data Quality & Validation</span>
-                        <span class="skill-tag">Executive KPI Reporting</span>
-                        <span class="skill-tag">Data Governance</span>
-                        <span class="skill-tag">Time Intelligence</span>
+                    <div class="tag-row">
+                        <span class="tag">Semantic Modeling</span>
+                        <span class="tag">ELT Development</span>
+                        <span class="tag">Data Quality and Validation</span>
+                        <span class="tag">Executive KPI Reporting</span>
+                        <span class="tag">Data Governance</span>
+                        <span class="tag">Time Intelligence</span>
                     </div>
-                </div>
-
-                <div class="skill-category">
-                    <h3>QA & Testing</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">UAT Test Cases</span>
-                        <span class="skill-tag">Regression Testing</span>
-                        <span class="skill-tag">Jira</span>
-                        <span class="skill-tag">Process Optimization</span>
+                </article>
+                <article class="panel">
+                    <h3>QA and Testing</h3>
+                    <div class="tag-row">
+                        <span class="tag">UAT Test Cases</span>
+                        <span class="tag">Regression Testing</span>
+                        <span class="tag">Jira</span>
+                        <span class="tag">Process Optimization</span>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Resume Section -->
-    <section class="resume" id="resume">
-        <div class="container">
-            <h2>Professional Resume</h2>
-
-            <!-- Experience -->
-            <div class="resume-section">
-                <h3 class="section-title">Experience</h3>
-
-                <div class="resume-item">
-                    <div class="resume-header">
-                        <div>
-                            <h4>VP, Data Management & Quantitative Analysis I</h4>
-                            <p class="company">Bank of New York</p>
-                            <p class="location">Global Payments & Trade – Management Information | Lake Mary, FL</p>
-                        </div>
-                        <div class="date">2025 – Present</div>
-                    </div>
-                    <ul class="resume-details">
-                        <li>Led delivery of enterprise Power BI reporting solutions by designing disciplined semantic models using Power Query and DAX, improving data reliability, performance, and long-term maintainability.</li>
-                        <li>Built and modernized executive dashboards, delivering 3 net-new Power BI reports and rebuilding 5+ legacy reports with refactored models, simplified measures, and standardized time-intelligence logic.</li>
-                        <li>Influenced team-wide analytics standards by defining best practices for data modeling, date tables, and readable DAX; served as a go-to resource for Power BI troubleshooting and optimization.</li>
-                        <li>Automated daily manual reporting workflows using Microsoft Fabric, eliminating Excel- and Alteryx-based processes and saving ~1 hour per day in recurring effort.</li>
-                        <li>Designed and implemented end-to-end Fabric data pipelines using Copy Jobs, Lakehouse storage, Fabric Notebooks (PySpark, SparkSQL), and Pipelines to ingest, transform, and publish curated datasets.</li>
-                        <li>Reduced local file dependencies by centralizing extracts, transformations, and outputs in Fabric-managed storage, improving governance, scalability, and auditability.</li>
-                        <li>Created a daily metrics snapshot framework using Fabric Notebooks and the semantic-link library, persisting historical results to a Lakehouse to enable trend analysis and longitudinal reporting.</li>
-                    </ul>
-                </div>
-
-                <div class="resume-item">
-                    <div class="resume-header">
-                        <div>
-                            <h4>Lead QA/Testing Analyst</h4>
-                            <p class="company">Bank of New York</p>
-                            <p class="location">Clearance and Collateral Management – User Acceptance & Client Testing | Lake Mary, FL</p>
-                        </div>
-                        <div class="date">2022 – 2025</div>
-                    </div>
-                    <ul class="resume-details">
-                        <li>Executed 700+ regression tests and authored 100+ UAT test cases to validate Nexen (UI/UX) and BDC enhancements; documented defects, reproduction steps, and proof of functionality for developers.</li>
-                        <li>Partnered with technology, relationship managers, and external stakeholders to communicate test outcomes, resolve issues, and align delivery to client needs.</li>
-                        <li>Led client onboarding readiness through QA environment testing and tailored demos; produced end-user documentation and training materials to support adoption.</li>
-                        <li>Developed operations analytics including a ThoughtSpot Liveboard and Power BI/Jira dashboards; analyzed 200+ attributes/measures and delivered KPI visualizations for team tracking and weekly reporting.</li>
-                        <li>Improved throughput by creating scalable Jira-driven processes, increasing productivity by 20% and reducing average age of test requests by 40%+.</li>
-                    </ul>
-                </div>
-
-                <div class="resume-item">
-                    <div class="resume-header">
-                        <div>
-                            <h4>Accounts Receivable Analyst</h4>
-                            <p class="company">Cowen & Company, LLC</p>
-                            <p class="location">Lake Mary, FL</p>
-                        </div>
-                        <div class="date">2018 – 2021</div>
-                    </div>
-                    <ul class="resume-details">
-                        <li>Handled CMTA option commissions invoicing exceeding $2.5 million monthly through Workday, enhancing the derivative invoicing process by 40% with advanced Excel formulas.</li>
-                        <li>Reconciled invoices and client accounts, booking over $15 million in receivables.</li>
-                        <li>Conducted research on trade breaks and collaborated cross-functionally with traders and P&S to resolve discrepancies.</li>
-                        <li>Developed processes to streamline CMTA invoice tracking and collaborated with new clients on billing setups.</li>
-                        <li>Successfully collected over 50% of aged CMTA receivables and handled deposits of over $150,000.</li>
-                    </ul>
-                </div>
-
-                <div class="resume-item">
-                    <div class="resume-header">
-                        <div>
-                            <h4>Corporal Bulk Fuel Specialist</h4>
-                            <p class="company">United States Marine Corps</p>
-                            <p class="location">Camp Hansen, Okinawa, Japan & Camp Lejeune, NC</p>
-                        </div>
-                        <div class="date">2012 – 2015</div>
-                    </div>
-                    <ul class="resume-details">
-                        <li>Oversaw a team in the maintenance of fuel equipment and the planning in logistical movements across Asia and Eastern United States.</li>
-                        <li>Conducted counseling reviews, oversaw fueling operations during training events, and managed over $5 million in tactical fuel systems.</li>
-                        <li>Worked alongside Japanese civilians while attached to 505th Quartermaster Battalion (Army) in fueling operations from ship to shore across Okinawa, pumping over 1M gallons of jet fuel to Marine Corps Air Station Futenma and Airforce Base Kadena.</li>
-                    </ul>
-                </div>
+        <section id="resume" class="container section reveal">
+            <h2>Resume Overview</h2>
+            <p class="small">Core experience, education, and accomplishments are organized below.</p>
+            <p class="small">If the preview does not load in your browser, use the download button.</p>
+            <div class="cta-row">
+                <a href="src/DG-Resume-2026.pdf" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Download PDF Resume</a>
+                <a href="#experience" class="btn btn-secondary">Jump to Experience</a>
+                <a href="#education" class="btn btn-secondary">Jump to Education</a>
             </div>
-
-            <!-- Education -->
-            <div class="resume-section">
-                <h3 class="section-title">Education</h3>
-                <div class="resume-item">
-                    <div class="resume-header">
-                        <div>
-                            <h4>Business Economics, BSBA</h4>
-                            <p class="company">University of Central Florida</p>
-                        </div>
-                        <div class="date">2019</div>
-                    </div>
-                    <p class="education-details">Notable coursework: Game Theory and Economics, Industrial Organization, Money and Banking, Public Economics</p>
-                </div>
+            <div class="resume-frame-wrap">
+                <iframe
+                    class="resume-frame"
+                    title="David Giliberti resume preview"
+                    src="src/DG-Resume-2026.pdf"
+                ></iframe>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Contact Section -->
-    <section class="contact" id="contact">
-        <div class="container">
-            <h2>Let's Connect</h2>
-            <p class="contact-intro">I'm always interested in discussing data analytics, strategic reporting, and enterprise solutions. Reach out to explore opportunities.</p>
-            
-            <div class="contact-links">
+        <section id="experience" class="container section reveal">
+            <h2>Experience</h2>
+            <div class="cards">
+                <article class="card">
+                    <h3>VP, Data Management and Quantitative Analysis I</h3>
+                    <p class="meta">Bank of New York | Global Payments and Trade - Management Information | Lake Mary, FL | 2025 - Present</p>
+                    <p>Lead enterprise analytics and reporting solutions using Power BI and Microsoft Fabric, modernizing dashboards, automating pipelines, and establishing scalable data modeling standards.</p>
+                </article>
+
+                <article class="card">
+                    <h3>Lead QA/Testing Analyst</h3>
+                    <p class="meta">Bank of New York | Clearance and Collateral Management - User Acceptance and Client Testing | Lake Mary, FL | 2022 - 2025</p>
+                    <p>Led UAT and client testing for financial platforms, partnering across teams to validate enhancements, improve testing workflows, develop analytics, and support successful client adoption.</p>
+                </article>
+
+                <article class="card">
+                    <h3>Accounts Receivable Analyst</h3>
+                    <p class="meta">Cowen and Company, LLC | Lake Mary, FL | 2018 - 2021</p>
+                    <p>Managed high-volume invoicing, receivables, and account reconciliation while improving billing processes, resolving trade discrepancies, and partnering with clients and internal stakeholders.</p>
+                </article>
+
+                <article class="card">
+                    <h3>Corporal Bulk Fuel Specialist</h3>
+                    <p class="meta">United States Marine Corps | Camp Hansen, Okinawa, Japan and Camp Lejeune, NC | 2012 - 2015</p>
+                    <p>Led personnel and large-scale fueling operations while managing tactical fuel systems, coordinating logistics, maintaining critical equipment, and supporting operations across multiple locations.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="education" class="container section reveal">
+            <h2>Education</h2>
+            <article class="panel">
+                <h3>Business Economics, BSBA</h3>
+                <p class="meta">University of Central Florida | 2019</p>
+                <p>Notable coursework: Game Theory and Economics, Industrial Organization, Money and Banking, Public Economics.</p>
+            </article>
+        </section>
+
+        <section id="contact" class="container section reveal">
+            <h2>Let&apos;s Connect</h2>
+            <p>I&apos;m always interested in discussing data analytics, strategic reporting, and enterprise solutions. Reach out to explore opportunities.</p>
+            <div class="contact-grid">
                 <a href="mailto:GILIBERTI29@GMAIL.COM" class="contact-card">
-                    <div class="contact-icon">✉️</div>
-                    <div class="contact-text">
-                        <h4>Email</h4>
-                        <p>GILIBERTI29@GMAIL.COM</p>
-                    </div>
+                    <span class="contact-label">Email</span>
+                    <span class="contact-value">GILIBERTI29@GMAIL.COM</span>
                 </a>
                 <a href="https://www.linkedin.com/in/giliberti" target="_blank" rel="noopener noreferrer" class="contact-card">
-                    <div class="contact-icon">💼</div>
-                    <div class="contact-text">
-                        <h4>LinkedIn</h4>
-                        <p>www.linkedin.com/in/giliberti</p>
-                    </div>
+                    <span class="contact-label">LinkedIn</span>
+                    <span class="contact-value">www.linkedin.com/in/giliberti</span>
                 </a>
                 <a href="tel:4072527645" class="contact-card">
-                    <div class="contact-icon">📱</div>
-                    <div class="contact-text">
-                        <h4>Phone</h4>
-                        <p>407.252.7645</p>
-                    </div>
+                    <span class="contact-label">Phone</span>
+                    <span class="contact-value">407.252.7645</span>
                 </a>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <p>&copy; 2026 David Giliberti. All rights reserved.</p>
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; <span id="year"></span> David Giliberti</p>
+        </div>
     </footer>
 
     <script src="script.js"></script>
