@@ -129,18 +129,16 @@
             <h2>Resume Overview</h2>
             <p class="small">Core experience, education, and accomplishments are organized below.</p>
             <p class="small">If the preview does not load in your browser, use the download button.</p>
-            <div class="cta-row">
+            <div class="cta-row resume-cta-row">
                 <a href="src/DG-Resume-2026.pdf" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Download PDF Resume</a>
-                <details class="resume-preview">
-                    <summary class="btn btn-secondary">Show PDF Preview</summary>
-                    <div class="resume-frame-wrap">
-                        <iframe
-                            class="resume-frame"
-                            title="David Giliberti resume preview"
-                            src="src/DG-Resume-2026.pdf"
-                        ></iframe>
-                    </div>
-                </details>
+                <button id="resumePreviewToggle" class="btn btn-primary" type="button" aria-expanded="false" aria-controls="resumeFrameWrap">Show PDF Preview</button>
+            </div>
+            <div id="resumeFrameWrap" class="resume-frame-wrap" hidden>
+                <iframe
+                    class="resume-frame"
+                    title="David Giliberti resume preview"
+                    src="src/DG-Resume-2026.pdf"
+                ></iframe>
             </div>
         </section>
     </main>

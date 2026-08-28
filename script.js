@@ -63,6 +63,19 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     });
 });
 
+const resumePreviewToggle = document.getElementById('resumePreviewToggle');
+const resumeFrameWrap = document.getElementById('resumeFrameWrap');
+
+if (resumePreviewToggle && resumeFrameWrap) {
+    resumePreviewToggle.addEventListener('click', () => {
+        const isOpen = resumeFrameWrap.hasAttribute('hidden') === false;
+        resumeFrameWrap.toggleAttribute('hidden', isOpen);
+        resumePreviewToggle.classList.toggle('is-active', !isOpen);
+        resumePreviewToggle.setAttribute('aria-expanded', String(!isOpen));
+        resumePreviewToggle.textContent = isOpen ? 'Show PDF Preview' : 'Hide PDF Preview';
+    });
+}
+
 const revealElements = document.querySelectorAll('.reveal');
 if ('IntersectionObserver' in window) {
     const observer = new IntersectionObserver(
